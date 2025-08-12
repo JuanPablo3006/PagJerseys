@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Catálogo de Jerseys de Selecciones</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f0f4f8;
+      color: #333;
+      padding: 20px;
+      margin: 0;
+    }
+    h1 {
+      text-align: center;
+      color: #1a3c6e;
+      font-size: 2.4em;
+      margin-bottom: 10px;
+    }
+    .subtitulo {
+      text-align: center;
+      color: #555;
+      margin-bottom: 40px;
+      font-size: 1.1em;
+    }
+    .catalogo {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 25px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .jersey {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+      width: 300px;
+      text-align: center;
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .jersey:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    }
+    .jersey img {
+      width: 100%;
+      height: 380px;
+      object-fit: cover;
+      border-bottom: 1px solid #eee;
+    }
+    .info {
+      padding: 18px;
+    }
+    .info h2 {
+      margin: 0 0 8px 0;
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+    .portugal h2 {
+      color: #006633; /* Verde esmeralda de Portugal */
+    }
+    .brasil h2 {
+      color: #009739; /* Verde Brasil */
+    }
+    .alemania h2 {
+      color: #D70015; /* Rojo Alemania */
+    }
+    .info p {
+      color: #555;
+      margin: 5px 0;
+    }
+    .capitan {
+      font-weight: bold;
+      color: #1a3c6e;
+    }
+    .precio {
+      font-weight: bold;
+      font-size: 1.3em;
+      color: #e71837;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🌍 Catálogo de Jerseys Nacionales</h1>
+  <p class="subtitulo">Selecciones oficiales – Copa América / Eurocopa / Mundial</p>
+
+  <div class="catalogo">
+    
+    <!-- Jersey 1: Portugal -->
+    <div class="jersey portugal">
+      <img src="https://via.placeholder.com/300x400/006633/ffffff?text=Portugal+2024" alt="Jersey Portugal">
+      <div class="info">
+        <h2>Portugal</h2>
+        <p class="capitan">Capitán: Cristiano Ronaldo</p>
+        <p>Tipo: Local - Temporada 2024</p>
+        <p>Marca: Nike</p>
+        <p class="precio">$1,449 MXN</p>
+      </div>
+    </div>
+
+    <!-- Jersey 2: Brasil -->
+    <div class="jersey brasil">
+      <img src="https://via.placeholder.com/300x400/009739/ffffff?text=Brasil+2024" alt="Jersey Brasil">
+      <div class="info">
+        <h2>Brasil</h2>
+        <p class="capitan">Capitán: Neymar Jr.</p>
+        <p>Tipo: Local - Temporada 2024</p>
+        <p>Marca: Nike</p>
+        <p class="precio">$1,499 MXN</p>
+      </div>
+    </div>
+
+    <!-- Jersey 3: Alemania -->
+    <div class="jersey alemania">
+      <img src="https://via.placeholder.com/300x400/D70015/ffffff?text=Alemania+2024" alt="Jersey Alemania">
+      <div class="info">
+        <h2>Alemania</h2>
+        <p class="capitan">Capitán: İlkay Gündogan</p>
+        <p>Tipo: Visitante - Temporada 2024</p>
+        <p>Marca: Adidas</p>
+        <p class="precio">$1,479 MXN</p>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
